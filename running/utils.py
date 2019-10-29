@@ -4,7 +4,7 @@ from scipy import optimize
 from math import exp
 from math import log
 from math import sqrt
-
+from math import pi
 
 
 matching_factor = {"SSMOMG" : lambda x : 1 + x * 1.978852189 + x * x * (55.03243483 - 3. * 6.161687618 
@@ -18,7 +18,7 @@ matching_factor = {"SSMOMG" : lambda x : 1 + x * 1.978852189 + x * x * (55.03243
 BILINEAR = {"tensor" : tensor(3), "scalar" : scalar(3)}
 
 
-ALPHA_S = 0.2904 / (3.14 * 4.) # ALPHA_S
+ALPHA_S = 0.2904 / (pi * 4.) # ALPHA_S
 
 SCALE = 2 # at 2GeV
 
